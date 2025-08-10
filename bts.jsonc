@@ -9,16 +9,9 @@
   "orm": "drizzle",
   "backend": "next",
   "runtime": "node",
-  "frontend": [
-    "next"
-  ],
-  "addons": [
-    "turborepo",
-    "biome"
-  ],
-  "examples": [
-    "todo"
-  ],
+  "frontend": ["next"],
+  "addons": ["turborepo", "biome"],
+  "examples": ["todo"],
   "auth": true,
   "packageManager": "pnpm",
   "dbSetup": "none",
