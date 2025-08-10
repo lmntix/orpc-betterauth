@@ -5,6 +5,7 @@ export async function createContext(req: NextRequest) {
   const session = await auth.api.getSession({
     headers: req.headers
   })
+
   return {
     session
   }

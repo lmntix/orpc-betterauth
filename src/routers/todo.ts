@@ -2,10 +2,10 @@ import { eq } from "drizzle-orm"
 import z from "zod"
 import { db } from "../db"
 import { todo } from "../db/schema/todo"
-import { publicProcedure } from "../lib/orpc"
+import { protectedProcedure, publicProcedure } from "../lib/orpc"
 
 export const todoRouter = {
-  getAll: publicProcedure.handler(async () => {
+  getAll: protectedProcedure.handler(async () => {
     return await db.select().from(todo)
   }),
 
