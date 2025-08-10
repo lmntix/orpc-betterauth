@@ -9,6 +9,8 @@
 !.yarn/releases
 !.yarn/versions
 
+/local.db*
+local.db
 # Testing
 /coverage
 
